@@ -7,4 +7,6 @@
     <dimen name="btnNavWidthHeight">35dp</dimen>
     <dimen name="btnNavWidthHeightExpanded">40dp</dimen>
     <dimen name="btnNavTitleSize">16sp</dimen>
+    <dimen name="bottomNavigationHeight">50dp</dimen>
+    <dimen name="navIconPadding">4dp</dimen>
 </resources>

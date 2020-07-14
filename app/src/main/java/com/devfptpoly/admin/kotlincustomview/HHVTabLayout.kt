@@ -87,7 +87,7 @@ class HHVTabLayout(context: Context, attrs: AttributeSet?) :
 
     private fun tabButton(index: Int, width: Int, height: Int): AppCompatButton {
         val params: ViewGroup.LayoutParams = ViewGroup.LayoutParams(
-            ViewGroup.LayoutParams.WRAP_CONTENT, height
+            width, height
         )
         val button = AppCompatButton(context)
         button.layoutParams = params
