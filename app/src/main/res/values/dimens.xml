@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tabWith">65dp</dimen>
+    <dimen name="tabHeight">50dp</dimen>
+    <dimen name="lineTabHeight">3dp</dimen>
+
+    <dimen name="btnNavWidthHeight">35dp</dimen>
+    <dimen name="btnNavWidthHeightExpanded">40dp</dimen>
+    <dimen name="btnNavTitleSize">16sp</dimen>
+</resources>
