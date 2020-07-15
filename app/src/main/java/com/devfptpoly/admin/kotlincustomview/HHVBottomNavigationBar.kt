@@ -12,7 +12,7 @@ class HHVBottomNavigationBar constructor(
 ) :
     MotionLayout(context, attrs) {
 
-    lateinit var hivBottomNavigationListened: HHVBottomNavigationListenner
+    var hivBottomNavigationListened: HHVBottomNavigationListenner? = null
 
     init {
         View.inflate(context, R.layout.hhv_bottom_navigation_bar, this)
@@ -25,22 +25,22 @@ class HHVBottomNavigationBar constructor(
         motion_layout.transitionToEnd()
 
         iv_home.setOnClickListener {
-            hivBottomNavigationListened.bottomNavigationListenner(BottomNavItem.First)
+            hivBottomNavigationListened?.bottomNavigationListenner(BottomNavItem.First)
             onSetTransition(motion_layout.currentState, R.id.home_expand)
         }
 
         iv_search.setOnClickListener {
-            hivBottomNavigationListened.bottomNavigationListenner(BottomNavItem.Second)
+            hivBottomNavigationListened?.bottomNavigationListenner(BottomNavItem.Second)
             onSetTransition(motion_layout.currentState, R.id.search_expand)
         }
 
         iv_like.setOnClickListener {
-            hivBottomNavigationListened.bottomNavigationListenner(BottomNavItem.Third)
+            hivBottomNavigationListened?.bottomNavigationListenner(BottomNavItem.Third)
             onSetTransition(motion_layout.currentState, R.id.like_expand)
         }
 
         iv_profile.setOnClickListener {
-            hivBottomNavigationListened.bottomNavigationListenner(BottomNavItem.Four)
+            hivBottomNavigationListened?.bottomNavigationListenner(BottomNavItem.Four)
             onSetTransition(motion_layout.currentState, R.id.profile_expand)
         }
     }

@@ -14,7 +14,17 @@ class MainActivity : AppCompatActivity(), HHVBottomNavigationBar.HHVBottomNaviga
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+        show(MainFragment.newInstance("", ""))
+    }
+
+    override fun onStart() {
+        super.onStart()
         bottomNavBar.hivBottomNavigationListened = this
+    }
+
+    override fun onStop() {
+        super.onStop()
+        bottomNavBar.hivBottomNavigationListened = null
     }
 
     override fun bottomNavigationListenner(item: HHVBottomNavigationBar.BottomNavItem) {
